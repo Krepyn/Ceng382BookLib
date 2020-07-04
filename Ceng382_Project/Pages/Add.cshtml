@@ -1,0 +1,82 @@
+﻿@page
+@model Ceng382_Project.Pages.AddModel
+@{
+    ViewData["Title"] = "Add Book";
+    Layout = "~/Pages/Shared/_LoginLayout.cshtml";
+}
+
+<div class="addbook">
+    @Model.Msg
+    <div class="formu">
+        <form class="addu" method="post">
+            <div class="rowu">
+                <div class="colu">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="NewBook.Id" />
+
+                    <div><label asp-for="NewBook.Title">Title</label></div>
+                    <div><input asp-for="NewBook.Title" data-val="true" data-val-required="Title field must be filled." type="text"></div>
+                    <div><span asp-validation-for="NewBook.Title" class="text-danger"></span></div>
+
+                    <div><label asp-for="NewBook.Author">Author</label></div>
+                    <div><input asp-for="NewBook.Author" data-val="true" data-val-required="Author field must be filled." type="text"></div>
+                    <div><span asp-validation-for="NewBook.Author" class="text-danger"></span></div>
+
+                    <div><label asp-for="NewBook.Translator">Translator</label></div>
+                    <div><input asp-for="NewBook.Translator" type="text"></div>
+
+                    <div><label asp-for="NewBook.Publisher">Publisher</label></div>
+                    <div><input asp-for="NewBook.Publisher"></div>
+
+                    <div><label asp-for="NewBook.Description">Book Description</label></div>
+                    <div><textarea asp-for="NewBook.Description" data-val="true" data-val-required="Description field must be filled." rows="4" required></textarea></div>
+                    <div><span asp-validation-for="NewBook.Description" class="text-danger"></span></div>
+                </div>
+
+                <div class="colu">
+                    <div><label asp-for="NewBook.Cover">Book Cover</label></div>
+                    <div><input asp-for="NewBook.Cover"></div>
+
+                    <div><label asp-for="NewBook.Categories">Categories</label></div>
+                    <div><input asp-for="NewBook.Categories"></div>
+                    
+                    <div class="rowu">
+                        <div class="colu">
+                            <div><label asp-for="NewConnection.Status">Reading Status</label></div>
+                            <div>
+                                <select asp-for="NewConnection.Status">
+                                    <option value="Completed">Completed</option>
+                                    <option value="Reading">Reading</option>
+                                    <option value="Not started">Not started</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="colu">
+                            <div><label asp-for="NewConnection.Rating">Rating</label></div>
+                            <div>
+                                <select asp-for="NewConnection.Rating">
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonu">
+                <a class="btn cancu" asp-area="" asp-page="/MainPage">Cancel</a>
+                <input class="btn subu" type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</div>
+

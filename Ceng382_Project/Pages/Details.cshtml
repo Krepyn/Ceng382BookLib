@@ -1,0 +1,25 @@
+﻿@page
+@model Ceng382_Project.Pages.DetailsModel
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Pages/Shared/_LoginLayout.cshtml";
+}
+
+    <div class="flexu">
+        <div class="details">
+            <div class="flexu">
+                <div class="details-img" style="background-image: url(../assets/covers/@(Model.Book.Cover));"></div>
+            </div>
+                
+            <div class="details-body">
+                <div class="booktitle" style="font-size:22px;">@Model.Book.Title</div>
+                <div class="bookauthor">@Model.Book.Author</div>
+            </div>
+            <div style="padding-bottom:5px;">
+                <div><b>Translator: </b>@Model.Book.Translator</div>
+                <div><b>Publisher: </b>@Model.Book.Publisher</div>
+                <div><b>Categories: </b>@Model.Book.Categories</div>
+                <div><b>Description:</b> @Model.Book.Description</div>
+            </div>
+        </div>
+    </div>

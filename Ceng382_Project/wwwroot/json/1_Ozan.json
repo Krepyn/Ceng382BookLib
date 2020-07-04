@@ -1,0 +1,68 @@
+[
+  {
+    "Title": "Metro 2034",
+    "Author": "Dmitry Glukhovsky",
+    "Translator": "Deniz Banoğlu",
+    "Publisher": "Panama Yayıncılık",
+    "Description": "Yıl 2034... Nükleer kıyamet sonrası Moskova metrosunda yaşananlar.",
+    "Cover": "metro2034.jpg",
+    "Categories": "Bilim Kurgu",
+    "Status": "Not started",
+    "Rating": 9
+  },
+  {
+    "Title": "Metro 2033",
+    "Author": "Dmitry Glukhovsky",
+    "Translator": "Deniz Banoğlu",
+    "Publisher": "Panama Yayıncılık",
+    "Description": "The year is 2033. The world has been reduced to rubble. Humanity is nearly extinct. The half-destroyed cities have become uninhabitable through radiation. Beyond their boundaries, they say, lie endless burned-out deserts and the remains of splintered forests. Survivors still remember the past greatness of humankind. But the last remains of civilisation have already become a distant memory, the stuff of myth and legend.",
+    "Cover": "metro2033.jpg",
+    "Categories": "Bilim Kurgu",
+    "Status": "Not started",
+    "Rating": 1
+  },
+  {
+    "Title": "Metro 2035",
+    "Author": "Dmitry Glukhovsky",
+    "Translator": "Deniz Banoğlu",
+    "Publisher": "Panama Yayıncılık",
+    "Description": "asdf",
+    "Cover": "metro2035.jpg",
+    "Categories": "Bilim Kurgu",
+    "Status": "Completed",
+    "Rating": 7
+  },
+  {
+    "Title": "Mistborn: The Final Empire",
+    "Author": "Brandon Sanderson",
+    "Translator": null,
+    "Publisher": "Tor Books",
+    "Description": "Where ash falls from the sky, and mist dominates the night, evil cloaks the land and stifles all life. Criminal mastermind Kelsier teaches Allomancy, the magic of metals, to another Mistborn, urchin Vin 16. The unlikely heroine is distracted by rich Venture heir Elend. Can Kelsier's thieving crew take on the tyrant Lord Ruler and bring back colour to their world?",
+    "Cover": "finalEmpire.jpg",
+    "Categories": "Fiction, Fantasy",
+    "Status": "Completed",
+    "Rating": 0
+  },
+  {
+    "Title": "Mistborn: Well of Ascension",
+    "Author": "Brandon Sanderson",
+    "Translator": null,
+    "Publisher": "Tor Books",
+    "Description": "Vin, the street urchin who has grown into the most powerful Mistborn in the land, and Elend Venture, the idealistic young nobleman who loves her, must build a healthy new society in the ashes of an empire. Three separate armies attack. As the siege tightens, an ancient legend seems to offer a glimmer of hope. But even if it really exists, no one knows where to find the Well of Ascension or what manner of power it bestows.",
+    "Cover": "WoA.jpg",
+    "Categories": "Fiction, Fantasy",
+    "Status": "Completed",
+    "Rating": 9
+  },
+  {
+    "Title": "Mistborn: The Hero of Ages",
+    "Author": "Brandon Sanderson",
+    "Translator": null,
+    "Publisher": "Tor Books",
+    "Description": "Tricked into releasing the evil spirit Ruin while attempting to close the Well of Ascension, new emperor Elend Venture and his wife, the assassin Vin, are now hard-pressed to save the world.",
+    "Cover": "HoA.jpg",
+    "Categories": "Fiction, Fantasy",
+    "Status": "Completed",
+    "Rating": 9
+  }
+]

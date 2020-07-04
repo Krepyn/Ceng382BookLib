@@ -1,0 +1,25 @@
+﻿@page
+@model Ceng382_Project.Pages.ImExModel
+@{
+    ViewData["Title"] = "Import/Export";
+    Layout = "~/Pages/Shared/_LoginLayout.cshtml";
+}
+
+    <div class="flexu">
+        <div class="login ImExContainer">
+            <p style="font-weight: bold; text-align: center; font-size: 28px;">Import/Export</p>
+            <p style="text-align:center">@Model.Msg</p>
+            <div class="flexu">
+                <form method="post">
+                    <input type="hidden" value="0" id="Op" name="Op" />
+                    <input class="btn subu ImExu" type="submit" value="Import Data (JSON)" />
+                </form>
+            </div>
+            <div class="flexu">
+                <form method="post">
+                    <input type="hidden" value="1" id="Op" name="Op" />
+                    <input class="btn subu ImExu" type="submit" value="Export Data (JSON)" />
+                </form>
+            </div>
+        </div>
+    </div>

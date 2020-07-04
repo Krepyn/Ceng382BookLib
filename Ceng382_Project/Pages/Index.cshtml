@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div class="flexu">
+    <div class="login">
+        <p style="font-weight: bold; text-align: center; font-size: 28px;">Login</p>
+        @Model.Msg
+        <form method="post" asp-page="login">
+            <div class="flexu2">
+                <label for="email">Email:</label>
+                <input class="loginu2" data-val="true" data-val-required="Email field must be filled." type="text" id="email" name="Email" value="" />
+            </div>
+            <span class="err" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+            <div class="flexu2">
+                <label for="password">Password:</label>
+                <input class="loginu2" data-val="true" data-val-required="Password field must be filled." type="password" id="Password" name="Password" value="" />
+            </div>
+            <span class="err" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            <div class="flexu" style="padding-top: 20px;">
+                <input class="btn subu loginu" style="width:75px" type="submit" value="Login" />
+                <a class="btn cancu loginu" asp-area="" asp-page="/SignUp">Signup</a>
+            </div>
+        </form>
+    </div>
+</div>

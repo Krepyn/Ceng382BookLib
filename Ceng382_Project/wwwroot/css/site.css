@@ -1,0 +1,455 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+body {
+    font-family: 'Courier New';
+}
+
+.header {
+    background-color: #eee8f1 !important;
+    box-shadow: 0px 2px 5px;
+}
+
+.footer {
+    background-color: #eee8f1 !important;
+    box-shadow: 0px -2px 5px;
+}
+
+nav.header a:link, nav.header a:visited, nav.header a:hover, nav.header a:active {
+    color: darkslategray;
+}
+
+div.details {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    background-color: #eee8f1 !important;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 5px;
+    width: 30%;
+}
+
+div.detailscontainer {
+    display:flex;
+}
+
+.details-img {
+    height: 300px;
+    width: 200px;
+    margin: 5px;
+    margin-bottom: 0px;
+
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.details-body {
+    text-align:center;
+    font-size: 12px;
+    padding-top:5px;
+    padding-bottom: 10px;
+}
+
+div.search {
+    position:relative;
+    margin-top: 50px;
+    width: 245px;
+    background-color: #eee8f1 !important;
+    box-shadow: 0px -2px 1px 1px;
+    z-index: 1;
+}
+
+.searchu {
+    margin: 5px;
+    background-color: rgba(0,0,0,0);
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #cfcfcf;
+}
+
+.searchu:focus {
+    outline: none;
+    border-bottom: 2px solid #897297;
+}
+
+div.books {
+    background-color: #eee8f1 !important;
+    padding: 5px 10px;
+    min-height: 730px;
+    box-shadow: 0px 0px 5px 5px;
+
+    vertical-align: bottom;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    column-count: 2;
+    column-gap: 5px;
+    orphans: 1;
+    widows: 1;
+}
+
+div.bookcardcontainer {
+    width: 100%;
+    display: inline-block;
+    height: 230px;
+    margin: 5px 0px;
+}
+
+div.bookcard {
+    height: 230px;
+    border: 2px solid rgba(230,227,232,.5);
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+.bookcard-body {
+    height: 215px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    width: 50%;
+
+    flex:70%;
+    padding: 1.25rem;
+}
+
+.bookcard-img {
+    height: 200px;
+    width: 50%;
+    margin: 15px;
+    flex: 30%;
+    border: 2px solid rgb(72, 0, 255);
+
+    vertical-align: bottom;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.booktitle {
+    color: #5f2b7e;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bookauthor {
+    color: #5f2b7e;
+    font-size: 14px;
+}
+
+.desc {
+    height: 70px;
+    word-wrap: break-word;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+body.bgpage {
+    background: url(../assets/LoginBg.jpeg) no-repeat center center fixed;
+    background-color: #000000;
+    min-height: 100%;
+}
+
+div.signupu {
+    box-shadow: 0px 0px 5px 5px;
+    background-color: #eee8f1 !important;
+    margin-top: 50px;
+    padding: 20px;
+    width: 30%;
+}
+
+.signup input, .signup input:focus {
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.signup input:focus {
+    outline: none;
+    border-bottom: 2px solid #897297;
+}
+
+.loginu2, .loginu2:focus {
+    background-color: #eee8f1 !important;
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.loginu2:focus {
+    outline: none;
+    border-bottom: 2px solid #897297;
+}
+
+.signup label {
+    font-size: 14px;
+}
+
+div.addbook {
+    box-shadow: 0px 0px 5px 5px;
+    background-color: #eee8f1 !important;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+div.login {
+    background-color: #eee8f1 !important;
+    box-shadow: 0px 0px 5px 5px;
+    max-width: 400px;
+    height: 250px;
+    padding: 20px;
+    margin: 10%;
+}
+
+.rowu {
+    display: flex;
+}
+
+.colu {
+    flex: 50%;
+}
+
+.colu div input, .colu div input:focus {
+    width: 90%;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.colu div input:focus {
+    outline:none !important;
+    border-bottom: 2px solid #897297;
+}
+
+.addu div textarea {
+    width: 90%;
+    background-color: unset;
+    border: none;
+    border-bottom: 2px solid #cfcfcf;
+    resize: none;
+}
+
+.addu select {
+    border: 1px solid #eee8f1;
+    background-color: #eee8f1;
+    border-bottom: 2px solid #cfcfcf;
+}
+
+.addu select:focus, .addu select:hover {
+    outline: none;
+    border-bottom: 2px solid #897297;
+}
+
+.addu div textarea:focus {
+    outline: none;
+    border-bottom: 2px solid #897297;
+}
+
+.addu div label {
+    margin-bottom: -15px;
+    color:black;
+    /*color: #b26ada;*/
+    font-size: 14px;
+}
+
+.cancu, .cancu:hover {
+    font-size: 12px;
+    padding: 5px;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0px 2px;
+    width: 55px;
+}
+
+.subu, .subu:hover{
+    font-size: 12px;
+    margin-left: 5px;
+    padding: 4px;
+    border: none;
+    background-color: #5a247a;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0px 2px 0px 0px black;
+    width: 50px;
+}
+
+.logout, .logout:hover {
+    color: white !important;
+    box-shadow: none;
+    position: absolute;
+    right: 5px;
+    width: 55px;
+}
+
+.settings, .settings:hover {
+    color: white !important;
+    box-shadow: none;
+    position: absolute;
+    right: 65px;
+    width: 70px;
+}
+
+.booklist, .booklist:hover {
+    margin-left: 0px;
+    color: white !important;
+    width: 80px !important;
+    box-shadow: none;
+    position: absolute;
+    left: 5px;
+}
+
+.addbtn, .addbtn:hover {
+    margin-left: 0px;
+    color: white !important;
+    width: 80px !important;
+    box-shadow: none;
+    position: absolute;
+    left: 90px;
+}
+
+.imex, .imex:hover {
+    margin-left: 0px;
+    color: white !important;
+    width: 100px !important;
+    box-shadow: none;
+    position: absolute;
+    left: 175px;
+}
+
+.ImExContainer {
+    width: 40%;
+}
+
+.ImExu, .ImExu:hover{
+    margin-top:10px;
+    background-color:darkgray;
+    color: black;
+    width:unset;
+    font-size:20px;
+}
+
+.buttonu {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.buttonu2 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 11px;
+    width: 50%;
+}
+
+div.formu {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+div.flexu {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+div.inl {
+    text-align: center;
+    display: inline-block;
+}
+
+div.flexu label {
+    margin-bottom: -15px;
+    width: 100px;
+}
+
+.loginu, .loginu:hover {
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    width: unset;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}

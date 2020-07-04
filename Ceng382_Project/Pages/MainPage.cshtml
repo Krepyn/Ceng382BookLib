@@ -1,0 +1,73 @@
+﻿@page
+@model Ceng382_Project.Pages.MainPageModel
+@{
+    ViewData["Title"] = "Book List";
+    Layout = "~/Pages/Shared/_LoginLayout.cshtml";
+}
+
+        <div class="search">
+            <form method="post">
+                <input type="hidden" value="search" name="X" id="X" />
+                <input class="searchu" type="text" name="SearchVal" placeholder="Type to search..." id="SearchVal">
+                <input class="btn" style="transform: rotate(45deg); padding: 0;" type="submit" value="⚲">
+            </form>
+        </div>
+
+        <div class="books">
+            @{ var i = 0; }
+            @if (Model.Connects.Count() > 0)
+            {
+                @foreach (var item in Model.Connects)
+                {
+                    @if (item.UserId == Model.Usr.Id)
+                    {
+                        @if (Model.X == "search")
+                        {
+                            @if (item.Book.Title.ToUpper().Contains(Model.SearchVal.ToUpper()))
+                            {
+                                <div class="bookcardcontainer">
+                                    <div class="bookcard">
+                                        <div class="bookcard-img" style="background-image: url(../assets/covers/@(item.Book.Cover));"></div>
+                                        <div class="bookcard-body">
+                                            <div class="booktitle">@item.Book.Title</div>
+                                            <div class="bookauthor">@item.Book.Author</div>
+                                            <div><b>Rating:</b> @item.Rating</div>
+                                            <div><b>Reading Status:</b> @item.Status</div>
+                                            <div class="desc"><b>Description:</b> @item.Book.Description</div>
+                                            <div class="buttonu2">
+                                                <a class="btn subu" asp-page="./Edit" asp-route-id="@item.BookId">Edit</a>
+                                                <a class="btn subu" asp-page="./Details" asp-route-id="@item.BookId">Details</a>
+                                                <a class="btn subu" asp-page="./Delete" asp-route-id="@item.BookId">Delete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div class="bookcardcontainer">
+                                <div class="bookcard">
+                                    <div class="bookcard-img" style="background-image: url(../assets/covers/@(item.Book.Cover));"></div>
+                                    <div class="bookcard-body">
+                                        <div class="booktitle">@item.Book.Title</div>
+                                        <div class="bookauthor">@item.Book.Author</div>
+                                        <div><b>Rating:</b> @item.Rating</div>
+                                        <div><b>Reading Status:</b> @item.Status</div>
+                                        <div class="desc"><b>Description:</b> @item.Book.Description</div>
+                                        <div class="buttonu2">
+                                            <a class="btn subu" asp-page="./Edit" asp-route-id="@item.BookId">Edit</a>
+                                            <a class="btn subu" asp-page="./Details" asp-route-id="@item.BookId">Details</a>
+                                            <a class="btn subu" asp-page="./Delete" asp-route-id="@item.BookId">Delete</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            } else {
+            <div class="flexu"><p style="text-align:center">There are no books in your library. Click Add Book on the top left corner.</p></div>
+            }
+
+        </div>

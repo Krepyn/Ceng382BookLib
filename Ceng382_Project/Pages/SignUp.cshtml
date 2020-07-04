@@ -1,0 +1,55 @@
+﻿@page
+@model Ceng382_Project.Pages.SignUpModel
+
+@{
+    ViewData["Title"] = "SignUp";
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+}
+
+    <div class="flexu">
+        <div class="signupu">
+            <p style="text-align:center; font-size:20px; font-weight: bold;">Sign Up</p>
+            <p style="color:indianred">@Model.Msg</p>
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="signup">
+                    <label asp-for="User.Fname" name="fname">Name</label>
+                    <input data-val="true" data-val-required="Name field must be filled." asp-for="User.Fname" />
+                    <span asp-validation-for="User.Fname" class="text-danger"></span>
+                </div>
+                <div class="signup">
+                    <label asp-for="User.Lname">Surname</label>
+                    <input asp-for="User.Lname"/>
+                    <span asp-validation-for="User.Lname" class="text-danger"></span>
+                </div>
+                <div class="signup">
+                    <label asp-for="User.Bday"></label>
+                    <input asp-for="User.Bday"/>
+                    <span asp-validation-for="User.Bday" class="text-danger"></span>
+                </div>
+                <div class="signup">
+                    <label asp-for="User.Email">Email</label>
+                    <input data-val="true" data-val-required="Email field must be filled." asp-for="User.Email"/>
+                    <span asp-validation-for="User.Email" class="text-danger"></span>
+                </div>
+                <div class="signup">
+                    <label asp-for="User.Password"></label>
+                    <input data-val="true" data-val-required="Password field must be filled." asp-for="User.Password"/>
+                    <span asp-validation-for="User.Password" class="text-danger"></span>
+                </div>
+                <div class="signup">
+                    <label asp-for="User.Photo"></label>
+                    <input asp-for="User.Photo"/>
+                    <span asp-validation-for="User.Photo" class="text-danger"></span>
+                </div>
+                <div class="buttonu">
+                    <a class="btn cancu" asp-area="" asp-page="/Index">Cancel</a>
+                    <input class="btn subu" style="width:unset;" type="submit" value="Sign Up">
+                </div>
+            </form>
+        </div>
+    </div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
